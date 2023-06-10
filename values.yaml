@@ -1,8 +1,8 @@
 nginx:
   namespace: default
-  image: ammaret999/final-deploy:tagname
+  image: nginx:1.23.0
   replicas: 1
-  host: kao.web
+  host: nginx-test.arpo.website
   ingress:
     ingressClassName: nginx
   service:
