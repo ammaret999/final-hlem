@@ -8,17 +8,17 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: Kao
+      app: kao
       app.kubernetes.io/name: {{ .Release.Name }}
   replicas: {{ .Values.nginx.replicas }}
   template:
     metadata:
       labels:
-        app: Kao
+        app: kao
         app.kubernetes.io/name: {{ .Release.Name }}
     spec:
       containers:
-      - name: Kao
+      - name: kao
         image: {{ .Values.nginx.image }}
         ports:
         - containerPort: 80

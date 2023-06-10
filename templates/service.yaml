@@ -8,7 +8,7 @@ metadata:
 spec:
   type: {{ .Values.nginx.service.type }}
   selector:
-    app: Kao
+    app: kao
   ports:
     - protocol: TCP
       port: 80
