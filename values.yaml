@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: ammaret999/react-next-app
+  repository: ammaret999/final-deploy
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
